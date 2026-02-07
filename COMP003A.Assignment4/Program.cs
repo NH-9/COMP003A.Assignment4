@@ -6,7 +6,9 @@ namespace COMP003A.Assignment4
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine("---Stair Climbing Simulator---");
+            Console.Write("How many steps would you like to climb?: ");
+            int goal = int.Parse(Console.ReadLine());
         }
     }
 }
