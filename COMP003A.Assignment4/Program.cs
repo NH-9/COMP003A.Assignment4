@@ -24,7 +24,15 @@ namespace COMP003A.Assignment4
                     case 1:
                         {
                             progress++;
-                            Console.WriteLine($"Step {progress} has been taken.");
+                            if (progress == 4 || progress == 13) // 4 and 13 are considered unlucky numbers in certain cultures
+                            {
+                                Console.WriteLine("This step is unlucky and has been skipped over.");
+                                continue;
+                            }
+                            else
+                            {
+                                Console.WriteLine($"Step {progress} has been taken.");
+                            }
                             break;
                         }
 
@@ -41,6 +49,7 @@ namespace COMP003A.Assignment4
                             break;
                         }
                 }
+                
             }
             while (progress < goal);
         }
